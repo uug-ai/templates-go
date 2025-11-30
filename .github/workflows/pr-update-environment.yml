@@ -69,7 +69,7 @@ jobs:
           gitops-pr-environment: "pr${{ env.PR_NUMBER }}"
           changes: |
             {
-              "images[0].newName": "ghcr.io/$ORGANIZATION/${{ env.PROJECT }}-pullrequests",
+              "images[0].newName": "ghcr.io/${{env.ORGANIZATION}}/${{ env.PROJECT }}-pullrequests",
               "images[0].newTag": "${{ env.TAG }}"
             }
           commit-email: "gitops@uug.ai"
