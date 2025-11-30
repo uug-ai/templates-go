@@ -9,9 +9,9 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/api",
+            "program": "${workspaceFolder}",
             "args": ["serve"],
-            "envFile": "${workspaceFolder}/api/.env" // Add this line to load the .env file
+            "envFile": "${workspaceFolder}/.env" // Add this line to load the .env file
         }
     ]
 }
