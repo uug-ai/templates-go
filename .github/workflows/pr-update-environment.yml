@@ -5,8 +5,9 @@ on:
     types: [opened, synchronize, reopened]
 
 env:
-  PR_NUMBER: ${{ github.event.number }}
+  ORGANIZATION: uug-ai
   PROJECT: ${{ github.event.repository.name }}
+  PR_NUMBER: ${{ github.event.number }}
   SHA: ${{ github.sha }}
   TAG: ${{ github.event.repository.name }}-pr${{ github.event.number }}-${{ github.sha }}
 
