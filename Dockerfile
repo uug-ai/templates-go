@@ -28,7 +28,9 @@ RUN mkdir /data
 
 FROM alpine:latest
 
-COPY --chown=0:0 --from=builder /${project} /
+ARG project
+
+COPY --chown=0:0 --from=builder /${project}/main /main
 
 RUN apk update && apk add ca-certificates curl libstdc++ libc6-compat --no-cache && rm -rf /var/cache/apk/*
 
