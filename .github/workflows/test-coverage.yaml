@@ -4,6 +4,9 @@ on:
     types: [opened, synchronize, reopened]
   release:
     types: [created]
+  push:
+    branches:
+      - main
 
 env:
   ORGANIZATION: uug-ai
@@ -53,4 +56,3 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: ${{ env.ORGANIZATION }}/${{ env.PROJECT }}
           fail_ci_if_error: false
-          
