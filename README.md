@@ -1,5 +1,10 @@
 # Go Project Template
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/uug-ai/templates-go)](https://goreportcard.com/report/github.com/uug-ai/templates-go)
+[![GoDoc](https://godoc.org/github.com/uug-ai/templates-go?status.svg)](https://godoc.org/github.com/uug-ai/templates-go)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/uug-ai/templates-go)](https://pkg.go.dev/github.com/uug-ai/templates-go)
+[![Release](https://img.shields.io/github/release/uug-ai/templates-go.svg)](https://github.com/uug-ai/templates-go/releases/latest)
+
 A production-ready Go project template with best practices, standardized structure, and modern development tooling.
 
 ## 🚀 Features
