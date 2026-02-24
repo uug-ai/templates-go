@@ -229,11 +229,14 @@ The `specify` CLI is already on your `PATH` inside the dev container.
 specify check
 
 # Initialize Spec Kit in this project (using GitHub Copilot)
-specify init --here --ai copilot
+specify init --here --ai copilot --ignore-agent-tools
 
 # Or with another supported AI agent
-specify init --here --ai claude
+specify init --here --ai claude --ignore-agent-tools
 ```
+
+> **Note:** Use `--ignore-agent-tools` inside the dev container to skip checks for
+> agent CLI tools (e.g. Claude Code, Copilot CLI) that run on the host machine.
 
 ### Typical Workflow
 
@@ -251,7 +254,7 @@ Once initialized, use the slash commands from your AI coding agent:
 
 ```bash
 # 1. Initialize Spec Kit
-specify init --here --ai copilot
+specify init --here --ai copilot --ignore-agent-tools
 
 # 2. Open your AI agent and run:
 #    /speckit.constitution Focus on idiomatic Go, table-driven tests, and clean package boundaries

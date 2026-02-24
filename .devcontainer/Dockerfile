@@ -11,6 +11,9 @@ USER vscode
 # Install go swagger
 RUN go install github.com/swaggo/swag/cmd/swag@latest
 
+# Install Claude Code CLI
+RUN curl -fsSL https://claude.ai/install.sh | bash
+
 # Install uv and Spec Kit (specify-cli) for Spec-Driven Development
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
     && export PATH="$HOME/.local/bin:$PATH" \
