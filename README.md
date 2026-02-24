@@ -214,6 +214,54 @@ This template is available as open source. Modify and use it for your projects.
 - [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
 - [Effective Go](https://go.dev/doc/effective_go)
 - [Conventional Commits](https://www.conventionalcommits.org/)
+- [Spec Kit – Spec-Driven Development](https://github.com/github/spec-kit)
+
+## 🌱 Spec-Driven Development with Spec Kit
+
+This template ships with [Spec Kit](https://github.com/github/spec-kit) pre-installed in the dev container. Spec Kit lets you focus on **what** to build before **how** – specifications become the source of truth that drives AI-assisted implementation.
+
+### Quick Start
+
+The `specify` CLI is already on your `PATH` inside the dev container.
+
+```bash
+# Verify the installation
+specify check
+
+# Initialize Spec Kit in this project (using GitHub Copilot)
+specify init --here --ai copilot
+
+# Or with another supported AI agent
+specify init --here --ai claude
+```
+
+### Typical Workflow
+
+Once initialized, use the slash commands from your AI coding agent:
+
+| Step | Command | Purpose |
+|------|---------|---------|
+| 1 | `/speckit.constitution` | Define project principles and quality guidelines |
+| 2 | `/speckit.specify` | Describe what you want to build (the *what*, not the *how*) |
+| 3 | `/speckit.plan` | Create a technical implementation plan with your Go stack |
+| 4 | `/speckit.tasks` | Break the plan into actionable tasks |
+| 5 | `/speckit.implement` | Execute all tasks to build the feature |
+
+### Example
+
+```bash
+# 1. Initialize Spec Kit
+specify init --here --ai copilot
+
+# 2. Open your AI agent and run:
+#    /speckit.constitution Focus on idiomatic Go, table-driven tests, and clean package boundaries
+#    /speckit.specify Build a REST API that exposes CRUD operations for a "projects" resource
+#    /speckit.plan Use net/http, MongoDB for persistence, and the existing pkg/database package
+#    /speckit.tasks
+#    /speckit.implement
+```
+
+For the full methodology see the [Spec-Driven Development guide](https://github.com/github/spec-kit/blob/main/spec-driven.md).
 
 ## 💡 Tips
 
